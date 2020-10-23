@@ -1,4 +1,4 @@
-from analyse import lines_analyse
+from analyse import analyse_lines
 
 def file_read(path):
 	with open(path, "r") as file:
@@ -10,9 +10,7 @@ def file_write(path, lines):
 
 def file_compile(path):
 	lines = file_read(path)
-
-	lines = lines_analyse(lines)
-
+	lines = analyse_lines(lines)
 	file_write(path.partition(".")[0] + ".tex", lines)
 
 file_compile("test.txt")
