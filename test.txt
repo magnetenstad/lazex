@@ -1,0 +1,11 @@
+
+\ti Tittel.
+\au Magne Tenstad
+\da Oktober 23
+
+\be document
+	\be @al*
+		x &= (k + 1)! * (k + 2) * ( k + 3)
+		x &= (k + 2)! * (k + 3)
+		x &= (k + 3)!
+		
