@@ -1,11 +1,10 @@
-
 \title Tittel.
 \author Magne Tenstad
 \date Oktober 23
 
+\def f{x, y} (x^2 + 2*x + 2*y)
+\def g{x} (x^2 + 2*x + 2)
+
 \begin document
-	\begin align*
-		x &= (k + 1)! * (k + 2) * ( k + 3)
-		x &= (k + 2)! * (k + 3)
-		x &= (k + 3)!
-		
+	\begin align
+		g(10) = $g{(10 + 4)}
