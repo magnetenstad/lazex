@@ -1,8 +1,14 @@
 \title{Tittel.}
 \author{Magne Tenstad}
 \date{Oktober 23}
+
 \begin{document}
-	\begin{align}
-		g\left(10\right) = (\left(10+4\right)^2 + 2\cdot\left(10+4\right) + 2)\\
-	\end{align}
+	\begin{align*}
+		g\left(x\right)&= \left(x^2+2\cdot x+\frac{2}{\left(x+1\right)}+2\right)\\
+		g\left(1\right)&= \left(1^2+2\cdot 1+\frac{2}{\left(1+1\right)}+2\right)\\
+		&= 6.0\\
+		g\left(g\left(x\right)\right)&= \left(\left(x^2+2\cdot x+\frac{2}{\left(x+1\right)}+2\right)^2+2\cdot \left(x^2+2\cdot x+\frac{2}{\left(x+1\right)}+2\right)+\frac{2}{\left(\left(x^2+2\cdot x+\frac{2}{\left(x+1\right)}+2\right)+1\right)}+2\right)\\
+		g\left(g\left(1\right)\right)&= \left(\left(1^2+2\cdot 1+\frac{2}{\left(1+1\right)}+2\right)^2+2\cdot \left(1^2+2\cdot 1+\frac{2}{\left(1+1\right)}+2\right)+\frac{2}{\left(\left(1^2+2\cdot 1+\frac{2}{\left(1+1\right)}+2\right)+1\right)}+2\right)\\
+		&= 50.29\\
+	\end{align*}
 \end{document}

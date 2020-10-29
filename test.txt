@@ -2,9 +2,13 @@
 \author Magne Tenstad
 \date Oktober 23
 
-\def f{x, y} (x^2 + 2*x + 2*y)
-\def g{x} (x^2 + 2*x + 2)
+\def g{x} (x^2 + 2*x + 2/(x+1) + 2)
 
 \begin document
-	\begin align
-		g(10) = $g{(10 + 4)}
+	\begin align*
+		g(x) &= $g{x}
+		g(1) &= $g{1}
+		&= $eval{round{$g{1}, 2}}
+		g(g(x)) &= $g{$g{x}}
+		g(g(1)) &= $g{$g{1}}
+		&= $eval{round{$g{$g{1}}, 2}}
