@@ -2,7 +2,7 @@
 \author Magne Tenstad
 \date Oktober 23
 
-\def g{x} (x^2 + 2*x + 2/(x+1) + 2)
+\def $g{x} (x^2 + 2*x + 2/(x+1) + 2)
 
 \begin document
 	\begin align*

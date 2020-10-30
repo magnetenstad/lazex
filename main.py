@@ -1,4 +1,4 @@
-from analyse import analyse_lines
+from lib import compile_lines
 
 def file_read(path):
 	with open(path, "r") as file:
@@ -8,9 +8,9 @@ def file_write(path, lines):
 	with open(path, "w") as file:
 		file.writelines(lines)
 
-def file_compile(path):
+def lazex_to_latex(path):
 	lines = file_read(path)
-	lines = analyse_lines(lines)
+	lines = compile_lines(lines)
 	file_write(path.partition(".")[0] + ".tex", lines)
 
-file_compile("test.txt")
+lazex_to_latex("test.txt")
