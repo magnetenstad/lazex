@@ -64,7 +64,7 @@ def compile_expression(string, latex=True):
 				arguments = string[start+len(func.name)+1:end].replace(" ", "").split(",")
 				content = func.content
 				for i in range(min(len(func.arguments), len(arguments))):
-					content = content.replace(func.arguments[i], arguments[i])
+					content = content.replace(func.arguments[i], "(" + arguments[i] + ")")
 				output = compile_parenthesis(content, latex=latex)
 			
 			string = string[:start] + output + string[end+1:]

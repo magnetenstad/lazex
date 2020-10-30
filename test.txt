@@ -2,13 +2,14 @@
 \author Magne Tenstad
 \date Oktober 23
 
-\def $g{x} (x^2 + 2*x + 2/(x+1) + 2)
+\def $g{x} x^2 + 2*x + 2/(x+1) + 1
 
 \begin document
 	\begin align*
 		g(x) &= $g{x}
-		g(1) &= $g{1}
-		&= $eval{round{$g{1}, 2}}
-		g(g(x)) &= $g{$g{x}}
+		g(1) &= $g{1} = $eval{$g{1}}
+		\\
 		g(g(1)) &= $g{$g{1}}
-		&= $eval{round{$g{$g{1}}, 2}}
+		g(g(1)) &= g($eval{$g{1}})
+		&= $g{$eval{$g{1}}}
+		&= $eval{$g{$g{1}}}

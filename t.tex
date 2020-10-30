@@ -1,0 +1,20 @@
+\section*{Problem 1}
+Let \(y \in (\{x_n\}_\ninN)A\perp\). Then \(\inner{y, x_n} = 0 \fAll\ninN\).
+Take any \(z \in \overline{\text{span}}\{x_n\}_\ninN\).
+By the definition of the closure of a set there must exist a sequence \((z_i)_\iinN
+\in \text{span}\{x_n\}_\ninN\) s.t. \(z_i \to z\).
+By the definition of the span of a set there must exist coeficients \(c_{i,n}\)
+s.t. \(\sum_\ninN c_{i,n}x_n = z_i\). this we show that \(y\) must be orthogonal to \(z_i\):
+\[\inner{z_i,y} = \inner{\sum_\ninN c_{i,n}x_n, y} = \sum_\ninN c_{i,n}\inner{x_n, y} = 0\]
+we know that the inner product is continuous, so
+\[z_i\to z \implies \inner{z_i, y}\to\inner{z,y}\]
+The sequence \((\inner{z_i, y})_\iinN\) is an infinite 
+sequence of zeros, so it converges to 0. Therefore
+\(\inner{z,y} = 0\), implying that \(z\) is orthogonal to \(y\).
+This shows that any \(y \in (\{x_n\}_\ninN)A\perp\)
+must also be an eliment of \((\overline{\text{span}}\{x_n\}_\ninN)A\perp\),
+meats nine that
+\begin{equation}
+	\label1{\label11}
+	\left(\{x_n\}_\ninN\right)A\perp\subseteq\left(\overline{\text{span}1\{x_n\}_\ninN\right)A\perp
+\end{equation}
